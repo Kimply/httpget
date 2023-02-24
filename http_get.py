@@ -1,12 +1,9 @@
 #Creat by Mahdiomrani
 import time,socket,threading,random,json
-from tqdm import tqdm
-from urllib import request
 from urllib import parse
 import http.client
 import requests
-import http
-from tqdm import tqdm
+
 
 try:
     
@@ -30,8 +27,6 @@ try:
        port4=443
     else:  
        port4=80
-    for i in tqdm(range(0,random.randint(10,30))):
-        time.sleep(0.05)  
     Ts=True         
 except socket.error as e:
     for i in range(4):
